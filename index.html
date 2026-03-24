@@ -140,7 +140,7 @@
                 </a>
               </span> -->
               <span class="link-block">
-                <a href=""
+                <a href="https://arxiv.org/abs/2603.22057"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -210,13 +210,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Despite the remarkable success of large-scale pre-trained image representation models (i.e., vision encoders) across various vision tasks, they often fail to learn 3D spatial relationships between objects and backgrounds in the real world, constraining their effectiveness in various downstream applications. We attribute this to the limited availability of large-scale 3D training data, which makes it difficult for current image representation learning approaches to learn spatial relationships. This motivates the need for learning paradigms that rely on strong supervision while requiring less data.
+            Despite the remarkable success of large-scale pre-trained image representation models (i.e., vision encoders) across various vision tasks, they are predominantly trained on 2D image data and therefore often fail to capture 3D spatial relationships between objects and backgrounds in the real world, constraining their effectiveness in many downstream applications.
           </p>
           <p>
-            To address this, we propose a novel learning framework, <span class="dnerf">SpatialBoost</span>, that enhances the spatial awareness of existing pre-trained vision encoders by injecting dense 3D spatial knowledge expressed in linguistic forms. To be specific, the core idea involves converting dense 3D spatial information from 2D images into linguistic expressions, which is then used to inject such spatial knowledge into vision encoders through a Large Language Model (LLM). To this end, we adopt a multi-turn Chain-of-Thought (CoT) reasoning process that progressively incorporates dense spatial knowledge and builds hierarchical spatial understanding.
+            To address this, we propose SpatialBoost, a scalable framework that enhances the spatial awareness of existing pre-trained vision encoders by injecting 3D spatial knowledge expressed in linguistic descriptions. The core idea involves converting dense 3D spatial information from 2D images into linguistic expressions, which is then used to inject such spatial knowledge into vision encoders through a Large Language Model (LLM). To this end, we adopt a multi-turn Chain-of-Thought (CoT) reasoning process that progressively incorporates dense spatial knowledge and builds hierarchical spatial understanding.
           </p>
           <p>
-            To validate effectiveness, we adapt <span class="dnerf">SpatialBoost</span> to state-of-the-art vision encoders such as DINOv3, and evaluate its performance gains on a wide range of benchmarks requiring both 3D perception and general vision abilities.
+            To validate effectiveness, we adapt SpatialBoost to state-of-the-art vision encoders such as DINOv3, and evaluate its performance gains on a wide range of benchmarks requiring both 3D perception and general vision abilities. For instance, SpatialBoost improves DINOv3 performance from 55.9 to 59.7 mIoU on ADE20K, achieving state-of-the-art performance with 3.8% gain over the pre-trained DINOv3.
           </p>
         </div>
       </div>
@@ -446,11 +446,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{jeon2025spatialboost,
-  author    = {Jeon, Byungwoo and Kim, Dongyoung and Jang, Huiwon and Kim, Insoo and Shin, Jinwoo},
-  title     = {SpatialBoost: Enhancing Visual Representation through Language-Guided Reasoning},
-  journal   = {arXiv},
-  year      = {2025},
+    <pre><code>@article{jeon2026spatialboost,
+  title={SpatialBoost: Enhancing Visual Representation through Language-Guided Reasoning},
+  author={Jeon, Byungwoo and Kim, Dongyoung and Jang, Huiwon and Kim, Insoo and Shin, Jinwoo},
+  journal={arXiv preprint arXiv:2603.22057},
+  year={2026}
 }</code></pre>
   </div>
 </section>
